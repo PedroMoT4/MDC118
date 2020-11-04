@@ -20,17 +20,18 @@ int main(){
 
     if(opcao == 1){
         
-        x = valor / 3600;
         x = valor % 3600;
-        printf("O numero em horas eh: %.2f\n", x);
+        printf("O numero em horas eh: %.4f\n", x);
 
     } else if(opcao == 2){
 
-        x = valor * 3600;
-        printf("O numero em segudos eh: %f.2\n", x);
-    } else {
+        x = valor / 60;
+        printf("O numero em segudos eh: %f\n", x);
 
-        printf("Essa opcao eh invalida\n");
+    } else if(opcao == 3) {
+
+         x = valor * 3600;
+        printf("O numero em segundos eh: %d\n", x);
     }
 
     return 0;
