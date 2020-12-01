@@ -1,17 +1,23 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int i, utilizados;
  
     char caracteres[80];
+    int tamanho, contrario;
 
-        printf("Digite ate 80 caracteres: ");
-        scanf("%ch", &caracteres[i]);
-    
+    printf("Digite alguma coisa em ate 80 caracteres: ");
+    scanf("%[^\n]s", caracteres);
 
-    for (int i=80; i<utilizados; i++){
-        printf("%c", caracteres[i]);
+    tamanho=strlen(caracteres);
+
+    for (contrario=tamanho; contrario>-1; contrario--)
+    {
+        printf("%c", caracteres[contrario]);
     }
+
+    printf("\n");
+
 
     return 0;
 }
