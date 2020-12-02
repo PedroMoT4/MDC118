@@ -1,26 +1,42 @@
 #include <stdio.h>
 
+struct date_t {
+    unsigned char dia;
+    unsigned char mes;
+    unsigned short int ano;
+};
+
 int main()
 {
-    int dia, mes, ano;
+    struct date_t data;
 
-    printf("Digite o elementos da deta em numeros\n");
-    
-    printf("Qual o dia: ");
-    scanf("%d", &dia);
-    getchar();
-
-    printf("Qual o mes: ");
-    scanf("%d", &mes);
-    getchar();
-
-    printf("Qual o ano: ");
-    scanf("%d", &ano);
+    printf("Entre com o dia: ");
+    scanf("%c", &data.dia);
     getchar();
     
-    printf("A data no formato brasileiro eh: %d/%d/%d\n", dia, mes, ano);
+    printf("Entre com o mes: ");
+    scanf("%c", &data.mes);
+    getchar();
+            
+    printf("Entre com o ano: ");
+    scanf("%hd", &data.ano);
+    getchar();
+            
 
-    printf("A data no formato estado-unidense eh: %d/%d/%d\n", mes, dia, ano);
 
+    printf("Data no formato BR: \n");
+    printf("%c/%c/%hd\n",
+    data.dia,
+    data.mes,
+    data.ano
+    );
+
+    printf("Data no formato US: \n");
+    printf("%c/%c/%hd\n",
+    data.mes,
+    data.dia,
+    data.ano
+    );
+    
     return 0;
 }
