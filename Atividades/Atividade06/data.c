@@ -10,11 +10,11 @@ int main()
 {
     struct date_t data;
 
-    printf("Entre com o dia: ");
+    printf("Entre com o dia (1-31): ");
     scanf("%c", &data.dia);
     getchar();
     
-    printf("Entre com o mes: ");
+    printf("Entre com o mes (1-12): ");
     scanf("%c", &data.mes);
     getchar();
             

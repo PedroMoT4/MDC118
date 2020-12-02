@@ -57,6 +57,7 @@ int main()
     //);
 
     struct contato_t meu_contato;
+    struct contato_t lista_contatos[10];
 
     printf("Entre com o nome do contato: ");
     scanf("%[^\n]s", meu_contato.nome);
