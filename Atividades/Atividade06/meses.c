@@ -2,29 +2,86 @@
 
 enum meses
 {
-    janeiro = 1,
-    fevereiro = 2,
-    marco = 3,
-    abril = 4,
-    maio = 5,
-    junho = 6,
-    julho = 7,
-    agosto = 8,
-    setembro = 9,
-    outubro = 10,
-    novembro = 11,
-    dezembro = 12
+    janeiro,
+    fevereiro,
+    marco,
+    abril,
+    maio,
+    junho,
+    julho,
+    agosto,
+    setembro,
+    outubro,
+    novembro,
+    dezembro
 };
 
 int main()
 {
-    int meses;
-
-    printf("Informe o mes: ");
-    scanf("%d", &meses);
-
-    if(meses==janeiro|| meses==dezembro){
-        printf("O mes digitado eh %d\n", meses);
+    for(int i=0; i<12;i++)
+    {
+        if(i == janeiro)
+        {
+            printf("Janeiro = 1");
+            printf("\n");
+        }
+        if(i == fevereiro)
+        {
+            printf("Fevereiro = 2");
+            printf("\n");
+        }
+        if(i == marco)
+        {
+            printf("Marco = 3");
+            printf("\n");
+        }
+        if(i == abril)
+        {
+            printf("Abril = 4");
+            printf("\n");
+        }
+        if(i == maio)
+        {
+            printf("Maio = 5");
+            printf("\n");
+        }
+        if(i == junho)
+        {
+            printf("Junho = 6");
+            printf("\n");
+        }
+        if(i == julho)
+        {
+            printf("Julho = 7");
+            printf("\n");
+        }
+        if(i == agosto)
+        {
+            printf("Agosto = 8");
+            printf("\n");
+        }
+        if(i == setembro)
+        {
+            printf("Setembro = 9");
+            printf("\n");
+        }
+        if(i == outubro)
+        {
+            printf("Outubro = 10");
+            printf("\n");
+        }
+        if(i == novembro)
+        {
+            printf("Novembro = 11");
+            printf("\n");
+        }
+        if(i == dezembro)
+        {
+            printf("Dezembro = 12");
+            printf("\n");
+        }
     }
+
+
     return 0;
 }
